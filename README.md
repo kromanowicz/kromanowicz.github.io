@@ -1,6 +1,4 @@
 ## Karl J. Romanowicz, PhD
-Oregon State University
-
-Postdoctoral Scholar
+Postdoctoral Scholar | Oregon State University
 
 Personal website at [kromanowicz.github.io](kromanowicz.github.io)
