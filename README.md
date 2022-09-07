@@ -1,2 +1,2 @@
-# kromanowicz.github.io
-Personal website for Karl Romanowicz
+# Karl J. Romanowicz, PhD
+Personal website
