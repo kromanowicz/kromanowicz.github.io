@@ -75,12 +75,14 @@
     .feature-icons-appointments li,
     .feature-icons-education li {
         margin-bottom: 20px; /* Adjust the spacing between items */
+	display: inline-block; /* Display items in a line */
+        vertical-align: top; /* Align items to the top */
+	margin-right: 40px; /* Adjust the spacing between bullets */
     }
 
     .feature-icons-appointments li::before,
     .feature-icons-education li::before {
         content: "";
-        display: inline-block;
         width: 40px; /* Adjust the width of the image */
         height: 40px; /* Adjust the height of the image */
         margin-right: 10px; /* Adjust the spacing between the image and text */
