@@ -65,61 +65,94 @@
 									<p>My work is highly integrative, combining biochemistry, microbiology, and ecology from the molecular to the ecosystem scale. My past studies employed the extensive application of state-of-the-art molecular biology techniques including metagenomics, metatranscriptomics, and metabolomics, combined with more than a decade of field, laboratory, and bioinformatics experience.</p>
 
 <style>
-    .feature-icons-appointments,
-    .feature-icons-education {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
+            .feature-icons-appointments {
+                list-style-type: none;
+                padding: 0;
+		margin: 0;
+            }
 
-    .feature-icons-appointments li,
-    .feature-icons-education li {
-        margin-bottom: 20px; /* Adjust the spacing between items */
-	display: inline-block; /* Display items in a line */
-        vertical-align: top; /* Align items to the top */
-	margin-right: 40px; /* Adjust the spacing between bullets */
-    }
+            .feature-icons-appointments li {
+        	margin-bottom: 10px; /* Remove display and align-items properties to allow line breaks */
+		display: inline-block; /* Display items in a line */
+                vertical-align: top; /* Align items to the top */
+		margin-right: 40px; /* Adjust the spacing between bullets */
+            }
 
-    .feature-icons-appointments li::before,
-    .feature-icons-education li::before {
-        content: "";
-        width: 40px; /* Adjust the width of the image */
-        height: 40px; /* Adjust the height of the image */
-        margin-right: 10px; /* Adjust the spacing between the image and text */
-        background-size: cover;
-    }
+            .feature-icons-appointments li:nth-child(1) {
+                background: url('images/UO.jpg') no-repeat left center;
+                background-size: 40px; /* Adjust the size of the first bullet image */
+                padding-left: 50px; /* Ensure enough space for the bullet image */
+            }
 
-    .feature-icons-appointments li:nth-child(1)::before {
-        background: url('images/UO.jpg') no-repeat left center;
-    }
+            .feature-icons-appointments li:nth-child(2) {
+                background: url('images/OSU.jpg') no-repeat left center;
+                background-size: 40px; /* Adjust the size of the first bullet image */
+                padding-left: 50px; /* Ensure enough space for the bullet image */
+            }
 
-    .feature-icons-appointments li:nth-child(2)::before {
-        background: url('images/OSU.jpg') no-repeat left center;
-    }
-
-    .feature-icons-education li:nth-child(1)::before,
-    .feature-icons-education li:nth-child(2)::before {
-        background: url('images/UM.jpg') no-repeat left center;
-    }
-
-    .feature-icons-education li:nth-child(3)::before,
-    .feature-icons-education li:nth-child(4)::before {
-        background: url('images/MTU.jpg') no-repeat left center;
-    }
-
-    @media (max-width: 600px) {
-        .feature-icons-appointments li,
-        .feature-icons-education li {
-            margin-right: 0;
-        }
-    }
-</style>
+		@media (max-width: 600px) {
+                /* Adjust styles for smaller screens if needed */
+                .feature-icons-appointments li {
+                display: block; /* Change to block for smaller screens */
+		margin-right: 0; /* Remove right margin on smaller screens */
+                }
+            }
+	
+	</style>
 
         <h3>Appointments</h3>
         <ul class="feature-icons-appointments">
             <li><b>Postdoctoral Scholar</b> (Current)<br />University of Oregon</li>
             <li><b>Postdoctoral Scholar</b> (2022-23)<br />Oregon State University</li>
         </ul>
+
+<style>
+            .feature-icons-education {
+                list-style-type: none;
+                padding: 0;
+		margin: 0;
+            }
+
+            .feature-icons-education li {
+        	margin-bottom: 10px; /* Remove display and align-items properties to allow line breaks */
+		display: inline-block; /* Display items in a line */
+                vertical-align: top; /* Align items to the top */
+		margin-right: 40px; /* Adjust the spacing between bullets */
+            }
+
+            .feature-icons-education li:nth-child(1) {
+                background: url('images/UM.jpg') no-repeat left center;
+                background-size: 40px; /* Adjust the size of the first bullet image */
+                padding-left: 50px; /* Ensure enough space for the bullet image */
+            }
+
+            .feature-icons-education li:nth-child(2) {
+                background: url('images/UM.jpg') no-repeat left center;
+                background-size: 40px; /* Adjust the size of the first bullet image */
+                padding-left: 50px; /* Ensure enough space for the bullet image */
+            }
+
+            .feature-icons-education li:nth-child(3) {
+                background: url('images/MTU.jpg') no-repeat left center;
+                background-size: 40px; /* Adjust the size of the first bullet image */
+                padding-left: 50px; /* Ensure enough space for the bullet image */
+            }
+
+            .feature-icons-education li:nth-child(4) {
+                background: url('images/MTU.jpg') no-repeat left center;
+                background-size: 40px; /* Adjust the size of the first bullet image */
+                padding-left: 50px; /* Ensure enough space for the bullet image */
+            }
+
+		@media (max-width: 600px) {
+                /* Adjust styles for smaller screens if needed */
+                .feature-icons-education li {
+                display: block; /* Change to block for smaller screens */
+		margin-right: 0; /* Remove right margin on smaller screens */
+                }
+            }
+	
+        </style>
 
         <h3>Education</h3>
         <ul class="feature-icons-education">
