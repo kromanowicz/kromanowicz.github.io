@@ -68,10 +68,13 @@
             .feature-icons-appointments {
                 list-style-type: none;
                 padding: 0;
+		margin: 0;
             }
 
             .feature-icons-appointments li {
         	margin-bottom: 10px; /* Remove display and align-items properties to allow line breaks */
+		display: inline-block; /* Display items in a line */
+                vertical-align: top; /* Align items to the top */
             }
 
             .feature-icons-appointments li:nth-child(1) {
@@ -85,6 +88,12 @@
                 background-size: 40px; /* Adjust the size of the first bullet image */
                 padding-left: 50px; /* Ensure enough space for the bullet image */
             }
+
+	@media (max-width: 600px) {
+        /* Adjust styles for smaller screens if needed */
+        .feature-icons-appointments li {
+        display: block; /* Change to block for smaller screens */
+                }
         </style>
 
         <h3>Appointments</h3>
