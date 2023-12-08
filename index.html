@@ -74,44 +74,40 @@
 
     .feature-icons-appointments li,
     .feature-icons-education li {
-        margin-bottom: 10px;
-        display: flex; /* Use flex container to control spacing */
-        align-items: flex-start; /* Align items to the top */
+        margin-bottom: 20px; /* Adjust the spacing between items */
     }
 
-    .feature-icons-appointments li:nth-child(1),
-    .feature-icons-appointments li:nth-child(2),
-    .feature-icons-education li:nth-child(1),
-    .feature-icons-education li:nth-child(2),
-    .feature-icons-education li:nth-child(3),
-    .feature-icons-education li:nth-child(4) {
-        flex: 1; /* Distribute space evenly among flex items */
-        background-size: 40px;
-        padding-left: 50px;
+    .feature-icons-appointments li::before,
+    .feature-icons-education li::before {
+        content: "";
+        display: inline-block;
+        width: 40px; /* Adjust the width of the image */
+        height: 40px; /* Adjust the height of the image */
+        margin-right: 10px; /* Adjust the spacing between the image and text */
+        background-size: cover;
     }
 
-    .feature-icons-appointments li:nth-child(1) {
+    .feature-icons-appointments li:nth-child(1)::before {
         background: url('images/UO.jpg') no-repeat left center;
     }
 
-    .feature-icons-appointments li:nth-child(2) {
+    .feature-icons-appointments li:nth-child(2)::before {
         background: url('images/OSU.jpg') no-repeat left center;
     }
 
-    .feature-icons-education li:nth-child(1),
-    .feature-icons-education li:nth-child(2) {
+    .feature-icons-education li:nth-child(1)::before,
+    .feature-icons-education li:nth-child(2)::before {
         background: url('images/UM.jpg') no-repeat left center;
     }
 
-    .feature-icons-education li:nth-child(3),
-    .feature-icons-education li:nth-child(4) {
+    .feature-icons-education li:nth-child(3)::before,
+    .feature-icons-education li:nth-child(4)::before {
         background: url('images/MTU.jpg') no-repeat left center;
     }
 
     @media (max-width: 600px) {
         .feature-icons-appointments li,
         .feature-icons-education li {
-            display: block;
             margin-right: 0;
         }
     }
