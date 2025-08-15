@@ -91,18 +91,6 @@
                 padding-left: 60px; /* Ensure enough space for the bullet image */
             }
 
-            .feature-icons-appointments li:nth-child(3) {
-                background: url('images/OSU.jpg') no-repeat left center;
-                background-size: 50px; /* Adjust the size of the first bullet image */
-                padding-left: 60px; /* Ensure enough space for the bullet image */
-            }
-
-			.feature-icons-appointments li:nth-child(4) {
-                background: url('images/UM.jpg') no-repeat left center;
-                background-size: 50px; /* Adjust the size of the first bullet image */
-                padding-left: 60px; /* Ensure enough space for the bullet image */
-            }
-
 		@media (max-width: 600px) {
                 /* Adjust styles for smaller screens if needed */
                 .feature-icons-appointments li {
@@ -117,6 +105,46 @@
         <ul class="feature-icons-appointments">
             <li><b>Principal Scientist</b> (Current)<br />SynPlexity</li>
 			<li><b>Postdoctoral Scholar</b> (Current)<br />University of Oregon</li>
+        </ul>
+
+<style>
+            .feature-icons-past-appointments {
+                list-style-type: none;
+                padding: 0;
+		margin: 0;
+            }
+
+            .feature-icons-past-appointments li {
+        	margin-bottom: 10px; /* Remove display and align-items properties to allow line breaks */
+		display: inline-block; /* Display items in a line */
+                vertical-align: top; /* Align items to the top */
+		margin-right: 117px; /* Adjust the spacing between bullets */
+            }
+
+            .feature-icons-past-appointments li:nth-child(1) {
+                background: url('images/OSU.jpg') no-repeat left center;
+                background-size: 50px; /* Adjust the size of the first bullet image */
+                padding-left: 60px; /* Ensure enough space for the bullet image */
+            }
+
+			.feature-icons-past-appointments li:nth-child(2) {
+                background: url('images/UM.jpg') no-repeat left center;
+                background-size: 50px; /* Adjust the size of the first bullet image */
+                padding-left: 60px; /* Ensure enough space for the bullet image */
+            }
+
+		@media (max-width: 600px) {
+                /* Adjust styles for smaller screens if needed */
+                .feature-icons-past-appointments li {
+                display: block; /* Change to block for smaller screens */
+		margin-right: 0; /* Remove right margin on smaller screens */
+                }
+            }
+	
+	</style>
+
+        <h3>Past Appointments</h3>
+        <ul class="feature-icons-past-appointments">
             <li><b>Postdoctoral Scholar</b> (2022-23)<br />Oregon State University</li>
 			<li><b>Research Associate</b> (2013-17)<br />University of Michigan</li>
         </ul>
@@ -841,6 +869,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
